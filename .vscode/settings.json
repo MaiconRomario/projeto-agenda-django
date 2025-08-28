@@ -1,6 +1,5 @@
 {
-  "window.zoomLevel": 0
-  ,
+  "window.zoomLevel": 0,
   "editor.fontSize": 24,
   "editor.hover.enabled": true,
   "workbench.startupEditor": "none",
@@ -65,5 +64,19 @@
   },
 
   "cSpell.enabled": true,
-  "python-envs.pythonProjects": []
+  "python-envs.pythonProjects": [],
+
+  // 🔹 Atalho para limpar tela + histórico do terminal
+  "keybindings": [
+    {
+      "key": "ctrl+l",
+      "command": "workbench.action.terminal.clear",
+      "when": "terminalFocus"
+    },
+    {
+      "key": "ctrl+l",
+      "command": "workbench.action.terminal.clearScrollback",
+      "when": "terminalFocus"
+    }
+  ]
 }
